@@ -44,6 +44,9 @@ TagManager:
   - name: Food
     uniqueID: 1132479809
     locked: 0
+  - name: Grid
+    uniqueID: 304333669
+    locked: 0
   - name: Wrong
     uniqueID: 3340036961
     locked: 0
