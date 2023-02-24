@@ -41,9 +41,6 @@ TagManager:
   - name: BG
     uniqueID: 2615981747
     locked: 0
-  - name: Food
-    uniqueID: 1132479809
-    locked: 0
   - name: Grid
     uniqueID: 304333669
     locked: 0
@@ -52,6 +49,9 @@ TagManager:
     locked: 0
   - name: Right
     uniqueID: 3062817037
+    locked: 0
+  - name: Food
+    uniqueID: 1132479809
     locked: 0
   - name: Default
     uniqueID: 0

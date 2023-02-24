@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food5x5
       objectReference: {fileID: 0}
+    - target: {fileID: 4061357204101887913, guid: 4af78b34b915541bb92033508dcb5787, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4061357204101887926, guid: 4af78b34b915541bb92033508dcb5787, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1519,7 +1523,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 304333669
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2224,6 +2228,10 @@ PrefabInstance:
     - target: {fileID: 8426537499231642040, guid: fb0eaf01b22914b778e7cc8483cd05df, type: 3}
       propertyPath: m_Name
       value: Right (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426537499231642046, guid: fb0eaf01b22914b778e7cc8483cd05df, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8426537499231642047, guid: fb0eaf01b22914b778e7cc8483cd05df, type: 3}
       propertyPath: m_RootOrder
