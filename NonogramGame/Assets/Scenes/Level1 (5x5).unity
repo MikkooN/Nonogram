@@ -1063,6 +1063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 452358041}
   - component: {fileID: 452358040}
+  - component: {fileID: 452358042}
   m_Layer: 0
   m_Name: Grid5x5
   m_TagString: Untagged
@@ -1109,7 +1110,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 304333669
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1139,6 +1140,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &452358042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452358039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64b088821d7c440fea4861c3613cd2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &480916302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3170,8 +3183,12 @@ PrefabInstance:
       value: Food5x5
       objectReference: {fileID: 0}
     - target: {fileID: 4061357204101887926, guid: 4af78b34b915541bb92033508dcb5787, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061357204101887926, guid: 4af78b34b915541bb92033508dcb5787, type: 3}
       propertyPath: m_SortingLayer
-      value: -3
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4061357204101887927, guid: 4af78b34b915541bb92033508dcb5787, type: 3}
       propertyPath: m_RootOrder
