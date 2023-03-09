@@ -248,6 +248,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food5x5
       objectReference: {fileID: 0}
+    - target: {fileID: 4061357204101887913, guid: 4af78b34b915541bb92033508dcb5787, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4061357204101887926, guid: 4af78b34b915541bb92033508dcb5787, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4061357204101887927, guid: 4af78b34b915541bb92033508dcb5787, type: 3}
       propertyPath: m_RootOrder
       value: 3

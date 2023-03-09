@@ -17,13 +17,13 @@ namespace Nonogram
 
         void Start()
         {
+            tappedSquare = TouchInput.tappedSquare;
             foodImage = GameObject.FindGameObjectWithTag("Food");
             totalNumberOfRights = GameObject.FindGameObjectsWithTag("Right").Length;
             Debug.Log(totalNumberOfRights);
 
-            /*while (gameFinished == false)
+            while (gameFinished == false)
             {
-                //tappedSquare = the square the player touched;
                 squareRenderer = tappedSquare.GetComponent<SpriteRenderer>();
                 squareRenderer.enabled = true;
 
@@ -49,7 +49,7 @@ namespace Nonogram
                         //Turn on lose UI (try again button etc.)
                     }
                 }
-            }*/
+            }
         }
     }
 }
