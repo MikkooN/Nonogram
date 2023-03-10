@@ -22,7 +22,11 @@ namespace Nonogram
             totalNumberOfRights = GameObject.FindGameObjectsWithTag("Right").Length;
             Debug.Log(totalNumberOfRights);
 
-            while (gameFinished == false)
+        }
+
+        void Update()
+         {
+            if (tappedSquare != null)
             {
                 squareRenderer = tappedSquare.GetComponent<SpriteRenderer>();
                 squareRenderer.enabled = true;
