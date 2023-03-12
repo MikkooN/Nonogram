@@ -7,10 +7,9 @@ namespace Nonogram
 {
     public class LoadLevelSelect : MonoBehaviour
     {
-        // Start is called before the first frame update
-       public void PlayGame ()
+       public static void LoadLevel()
        {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
        }
     }
 }
