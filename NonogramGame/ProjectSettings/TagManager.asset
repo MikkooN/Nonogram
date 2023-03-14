@@ -44,7 +44,7 @@ TagManager:
   - name: BG
     uniqueID: 2615981747
     locked: 0
-  - name: White
+  - name: GridBG
     uniqueID: 970756483
     locked: 0
   - name: Wrong
