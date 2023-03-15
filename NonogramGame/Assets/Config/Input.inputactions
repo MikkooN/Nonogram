@@ -1,29 +1,29 @@
 {
-    "name": "Input",
+    "name": "TouchInput",
     "maps": [
         {
             "name": "Touch",
             "id": "4f0ede0c-94f5-481c-8b2e-c18f2d034f61",
             "actions": [
                 {
-                    "name": "TouchInput",
-                    "type": "Button",
+                    "name": "Tap",
+                    "type": "Value",
                     "id": "e4aa05f1-2db2-427a-9c36-f372fd0e35d5",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "c6ad9000-998c-438e-9a1c-c2d07631d807",
-                    "path": "<Touchscreen>/Press",
+                    "path": "<Touchscreen>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "Touch",
-                    "action": "TouchInput",
+                    "action": "Tap",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
