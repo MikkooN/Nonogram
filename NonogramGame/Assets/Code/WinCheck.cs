@@ -11,7 +11,7 @@ namespace Nonogram
         private static int totalNumberOfRights = StartLevel.totalNumberOfRights;
         private static int numberOfRights = 0;
         private static int health = 3;
-        private static Image foodImage = StartLevel.foodImage;
+        private static GameObject loseUI;
 
         public static void CheckIfWon()
         {
@@ -23,9 +23,10 @@ namespace Nonogram
                 {
                     numberOfRights++;
                     Debug.Log(numberOfRights);
-                    if (numberOfRights == totalNumberOfRights)
+                    if (numberOfRights >= totalNumberOfRights)
                     {
-                        foodImage.enabled = true;
+                        //winUI = GameObject.FindGameObjectWithTag("WinUI");
+                        //winUI.SetActive(true);
                         //Turn on win UI (next level button etc.)
                         //save the game at this point?
 
@@ -35,8 +36,10 @@ namespace Nonogram
                 {
                     health--;
                     Debug.Log(health);
-                    if (health == 0)
+                    if (health <= 0)
                     {
+                        //loseUI = gameObject;
+                        //loseUI.SetActive(true);
                         //Turn on lose UI (try again button etc.)
                     }
                 }
