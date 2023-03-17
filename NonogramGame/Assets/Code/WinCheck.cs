@@ -15,7 +15,7 @@ namespace Nonogram
 
         public static void CheckIfWon()
         {
-            tappedSquare = Tap.tappedSquare;
+            tappedSquare = TouchInput.tappedSquare;
 
             if (tappedSquare != null)
             {

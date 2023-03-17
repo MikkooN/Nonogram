@@ -124,9 +124,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6619404825619219952}
-        m_TargetAssemblyTypeName: Nonogram.Tap, Assembly-CSharp
-        m_MethodName: TappedSquare
+      - m_Target: {fileID: 5123280382954878455}
+        m_TargetAssemblyTypeName: Nonogram.TouchInput, Assembly-CSharp
+        m_MethodName: ButtonTapped
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 6619404825619219955}
   - component: {fileID: 6619404825619219953}
   - component: {fileID: 6619404825619219954}
-  - component: {fileID: 6619404825619219952}
+  - component: {fileID: 5123280382954878455}
   m_Layer: 5
   m_Name: WrongIcon
   m_TagString: Wrong
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6619404825619219952
+--- !u!114 &5123280382954878455
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
