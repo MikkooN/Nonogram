@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace Nonogram
 {
-    public class TouchInputTEST : MonoBehaviour
+    public class TESTinput : MonoBehaviour
     {
         public static GameObject tappedSquare;
 

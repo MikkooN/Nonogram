@@ -11,8 +11,9 @@ namespace Nonogram
 
         void Start()
         {
+            //Find the total amount of correct squares in the level
             totalNumberOfRights = GameObject.FindGameObjectsWithTag("Right").Length;
-            Debug.Log(totalNumberOfRights);
+            Debug.Log("Total number of rights: " + totalNumberOfRights);
         }
     }
 }
