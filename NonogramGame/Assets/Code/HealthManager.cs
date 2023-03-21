@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,9 +8,10 @@ namespace Nonogram
 {
     public class HealthManager : MonoBehaviour
     {
-        public Image[] hearts;
+        public GameObject[] hearts;
         public Sprite fullHeart;
         public Sprite emptyHeart;
+        private ParticleSystem burn;
 
         public void LoseHealth(int health)
         {
@@ -17,12 +19,25 @@ namespace Nonogram
             {
                 if (i < health)
                 {
-                    hearts[i].sprite = fullHeart;
+                    hearts[i].GetComponent<Image>().sprite = fullHeart;
                 } else
                 {
-                    hearts[i].sprite = emptyHeart;
+                    hearts[i].GetComponent<Image>().sprite = emptyHeart;
+                    burn = hearts[i].GetComponentInChildren<ParticleSystem>();
+                    burn.Play();
+
+                    RomeveElement(ref hearts, i);
                 }
             }
+        }
+
+        private void RomeveElement(ref GameObject[] hearts, int index)
+        {
+            for (int i = index; i < hearts.Length - 1; i++)
+            {
+                hearts[i] = hearts[i + 1];
+            }
+            Array.Resize(ref hearts, hearts.Length - 1);
         }
     }
 }
