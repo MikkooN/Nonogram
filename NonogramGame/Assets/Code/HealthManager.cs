@@ -20,7 +20,8 @@ namespace Nonogram
                 if (i < health)
                 {
                     hearts[i].GetComponent<Image>().sprite = fullHeart;
-                } else
+                }
+                else
                 {
                     hearts[i].GetComponent<Image>().sprite = emptyHeart;
                     burn = hearts[i].GetComponentInChildren<ParticleSystem>();
