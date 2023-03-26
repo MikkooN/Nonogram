@@ -8,6 +8,8 @@ TagManager:
   - Wrong
   - WinUI
   - LoseUI
+  - Left
+  - Top
   layers:
   - Default
   - TransparentFX
