@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Nonogram
 {
@@ -11,6 +12,9 @@ namespace Nonogram
         public GameObject winUI;
         public GameObject loseUI;
 
+        [SerializeField] private Image winImage;
+        [SerializeField] private Sprite foodImage;
+
         void Update()
         {
             gameWon = SquareCheck.gameWon;
@@ -19,6 +23,7 @@ namespace Nonogram
             if (gameWon == true)
             {
                 winUI.SetActive(true);
+                winImage.sprite = foodImage;
             }
 
             if (gameLost == true)

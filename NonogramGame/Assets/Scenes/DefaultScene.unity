@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 271449310}
   - component: {fileID: 271449309}
   m_Layer: 5
-  m_Name: GameBoards
+  m_Name: Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -425,7 +425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64b088821d7c440fea4861c3613cd2ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodImage: {fileID: 2800000, guid: 2e686c69012a04c0abff0d4a0686368c, type: 3}
+  foodImageBW: {fileID: 2800000, guid: 005c298cf20884473885841d1b19c4f4, type: 3}
   gameBoard5x5: {fileID: 1092729570}
   gameBoard10x10: {fileID: 1271417824}
   gameBoard15x15: {fileID: 308484243}
@@ -1053,6 +1053,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winUI: {fileID: 1804900426}
   loseUI: {fileID: 349919983}
+  winImage: {fileID: 1746596497}
+  foodImage: {fileID: 21300000, guid: 541b6752360204a0480e70c524f30b28, type: 3}
 --- !u!1 &569312746
 GameObject:
   m_ObjectHideFlags: 0
@@ -13341,7 +13343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: 750, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1720670860
@@ -13541,7 +13543,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 632943527, guid: 639db682ce2fe41d889dc30ce7c68708, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

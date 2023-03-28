@@ -43,5 +43,13 @@ namespace Nonogram
                 }
             }
         }
+
+        public static void ResetLevel()
+        {
+            numberOfRights = 0;
+            health = 3;
+            gameLost = false;
+            gameWon = false;
+        }
     }
 }

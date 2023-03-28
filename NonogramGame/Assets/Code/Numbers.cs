@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 namespace Nonogram
 {
@@ -12,6 +13,11 @@ namespace Nonogram
         [SerializeField] private TMP_Text numberText;
         private string numberString = "";
 
+        private List<GameObject> rights = new List<GameObject>();
+        private List<GameObject> wrongs = new List<GameObject>();
+
+        [SerializeField] private Color disabledColor;
+
         void Start()
         {
             StartCoroutine(Wait());
@@ -20,7 +26,7 @@ namespace Nonogram
         IEnumerator Wait()
         {
             //Wait a moment so the gameboard gets built
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.1f);
             GetNumbers();
         }
 
@@ -44,8 +50,17 @@ namespace Nonogram
                 if (hit.collider.gameObject.tag == "Right")
                 {
                     amount++;
+                    //Add the rights to their own list
+                    rights.Add(hit.collider.gameObject); 
                 }
-                else if (hit.collider.gameObject.tag == "Wrong" && amount > 0)
+                else if (hit.collider.gameObject.tag != "Right")
+                {
+                    //Add the wrongs to their own list
+                    wrongs.Add(hit.collider.gameObject);
+                }
+
+                //Format the text depending on the orientation
+                if (hit.collider.gameObject.tag == "Wrong" && amount > 0)
                 {
                     if (gameObject.tag == "Top")
                     {
@@ -57,39 +72,9 @@ namespace Nonogram
                     }
                     amount = 0;
                 }
-                
-                /*if (hit.Equals(hits.Length - 1))
-                {
-                    numberString = numberString + amount.ToString();
-                }*/
             }
 
-            /*for (int i = 0; i < hits.Length; i++)
-            {
-                if (hits[i].collider.gameObject.tag == "Right")
-                {
-                    amount++;
-                }
-                else if (hits[i].collider.gameObject.tag == "Wrong" && amount > 0)
-                {
-                    numberString = numberString + amount.ToString() + ",";
-                    amount = 0;
-                }
-                else if (i == hits.Length - 1)
-                {
-                    numberString = numberString + amount.ToString();
-                }
-            }*/
-
-            /*if (numberString != "")
-            {
-                numberText.text = numberString.TrimEnd(',');
-            }
-            else
-            {
-                numberText.text = amount.ToString();
-            }*/
-
+            //Put the number of rights on the gameboard
             if (amount == 0)
             {
                 numberText.text = numberString.TrimEnd(',');
@@ -97,6 +82,41 @@ namespace Nonogram
             else
             {
                 numberText.text = (numberString + amount.ToString()).TrimEnd(',');
+            }
+
+            //Change font size depending on the size of the board
+            if (hits.Length == 10)
+            {
+                numberText.fontSize = 35;
+            }
+            else if (hits.Length == 15)
+            {
+                numberText.fontSize = 30;
+            }
+        }
+
+        private void Update()
+        {
+            int buttonsDisabled = 0;
+
+            foreach (GameObject right in rights)
+            {
+                if (right.GetComponentInParent<Button>().enabled == false)
+                {
+                    buttonsDisabled++;
+                }
+            }
+
+            //Reveal the wrong buttons and turn the number text grey
+            //when the whole row has been played
+            if (buttonsDisabled == rights.Count && rights.Count > 0)
+            {
+                numberText.color = disabledColor;
+                foreach (GameObject wrong in wrongs)
+                {
+                    wrong.GetComponent<Image>().enabled = true;
+                    wrong.GetComponentInParent<Button>().enabled = false;
+                }
             }
         }
     }
