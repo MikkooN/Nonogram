@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace Nonogram
 {
@@ -14,6 +15,7 @@ namespace Nonogram
 
         [SerializeField] private Image winImage;
         [SerializeField] private Sprite foodImage;
+        [SerializeField] private TMP_Text foodName;
 
         void Update()
         {
@@ -24,6 +26,7 @@ namespace Nonogram
             {
                 winUI.SetActive(true);
                 winImage.sprite = foodImage;
+                foodName.text = foodImage.name;
             }
 
             if (gameLost == true)
