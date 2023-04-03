@@ -9,9 +9,8 @@ namespace Nonogram
     public class HealthManager : MonoBehaviour
     {
         public GameObject[] hearts;
-        public Sprite fullHeart;
-        public Sprite emptyHeart;
-        private ParticleSystem burn;
+        public Sprite healthIcon;
+        private Animator animator;
 
         public void LoseHealth(int health)
         {
@@ -19,20 +18,22 @@ namespace Nonogram
             {
                 if (i < health)
                 {
-                    hearts[i].GetComponent<Image>().sprite = fullHeart;
+                    //Keep the healthIcon for the hearts that haven't been lost
+                    hearts[i].GetComponent<Image>().sprite = healthIcon;
                 }
                 else
                 {
-                    hearts[i].GetComponent<Image>().sprite = emptyHeart;
-                    burn = hearts[i].GetComponentInChildren<ParticleSystem>();
-                    burn.Play();
+                    //If the player lost health, play animation & particle effect
+                    animator = hearts[i].GetComponentInChildren<Animator>();
+                    animator.SetTrigger("Burn");
 
-                    RomeveElement(ref hearts, i);
+                    //Remove the heart from the array
+                    RemoveElement(ref hearts, i);
                 }
             }
         }
 
-        private void RomeveElement(ref GameObject[] hearts, int index)
+        private void RemoveElement(ref GameObject[] hearts, int index)
         {
             for (int i = index; i < hearts.Length - 1; i++)
             {

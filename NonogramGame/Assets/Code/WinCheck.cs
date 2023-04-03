@@ -24,6 +24,8 @@ namespace Nonogram
 
             if (gameWon == true)
             {
+                //If the player won, turn on win UI and
+                //get the correct food image & name
                 winUI.SetActive(true);
                 winImage.sprite = foodImage;
                 foodName.text = foodImage.name;

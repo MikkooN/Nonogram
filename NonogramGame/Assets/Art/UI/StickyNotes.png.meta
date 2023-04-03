@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eebf031f048c642f18f2c953e4252e92
+guid: 7688d82a986f841e8a0f9c061dacc5eb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rights_0
+      name: StickyNotes_0
       rect:
         serializedVersion: 2
         x: 0
@@ -126,19 +126,19 @@ TextureImporter:
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 44, y: 42, z: 44, w: 42}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc62d946e93594ce8930c4b6fd51358d
-      internalID: 1809465768
+      spriteID: 81dd7492d0d0140658dd4b401607ce22
+      internalID: 113650501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rights_1
+      name: StickyNotes_1
       rect:
         serializedVersion: 2
         x: 256
@@ -147,61 +147,19 @@ TextureImporter:
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 40, y: 46, z: 40, w: 42}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96bd89e7a15f745d0a25148c4d7ec840
-      internalID: -825712621
+      spriteID: 490c5a8a4cbb249a393d9393aa3d6cb8
+      internalID: 405531293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rights_2
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 256
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6fd3cbbbae134166a5d9a57bfe2b631
-      internalID: -591376622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rights_3
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 256
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc711b9ab5f134f07aadae020a47e9c9
-      internalID: -1449330199
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rights_4
+      name: StickyNotes_2
       rect:
         serializedVersion: 2
         x: 0
@@ -210,19 +168,19 @@ TextureImporter:
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 45, y: 54, z: 70, w: 41}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e663473a556aa45068169b38a7841878
-      internalID: -230124137
+      spriteID: ac372d7b2cdc644c797d3df1f5fb6bd3
+      internalID: 175936756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rights_5
+      name: StickyNotes_3
       rect:
         serializedVersion: 2
         x: 256
@@ -231,55 +189,13 @@ TextureImporter:
         height: 256
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 43, y: 46, z: 48, w: 42}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef90bb20481594d76b74de56780b0145
-      internalID: -825967013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rights_6
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4a694c3530054ca98dc7ef6d287816e
-      internalID: -773748809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rights_7
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b8508044c9f84a19ae2f25ec7cd8994
-      internalID: 1154493690
+      spriteID: c3cf5b8680cde4d219574bd87aee8383
+      internalID: 1149990726
       vertices: []
       indices: 
       edges: []
@@ -295,14 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Rights_4: -230124137
-      Rights_2: -591376622
-      Rights_3: -1449330199
-      Rights_0: 1809465768
-      Rights_6: -773748809
-      Rights_7: 1154493690
-      Rights_1: -825712621
-      Rights_5: -825967013
+      StickyNotes_2: 175936756
+      StickyNotes_0: 113650501
+      StickyNotes_3: 1149990726
+      StickyNotes_1: 405531293
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

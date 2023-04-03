@@ -20,17 +20,22 @@ namespace Nonogram
             {
                 if (tappedSquare.tag == "Right")
                 {
+                    //If the player taps a right square, number of rights goes up
+                    //until all the rights have been found
                     numberOfRights++;
                     Debug.Log("Correct squares found: " + numberOfRights);
+
                     if (numberOfRights >= totalNumberOfRights)
                     {
                         gameWon = true;
-                        //save the game at this point?
+                        //TODO save the game at this point?
 
                     }
                 }
                 else if (tappedSquare.tag == "Wrong")
                 {
+                    //If the player taps a wrong square,
+                    //lose health and call the health manager
                     health--;
                     Debug.Log("Health: " + health);
                     healthUI = GameObject.Find("Health").GetComponent<HealthManager>();
@@ -46,6 +51,7 @@ namespace Nonogram
 
         public static void ResetLevel()
         {
+            //Reset static variables before leaving the level
             numberOfRights = 0;
             health = 3;
             gameLost = false;

@@ -15,8 +15,11 @@ namespace Nonogram
 
         private List<GameObject> rights = new List<GameObject>();
         private List<GameObject> wrongs = new List<GameObject>();
+        [SerializeField] private Sprite[] sprites;
 
         [SerializeField] private Color disabledColor;
+        private bool rowRevealed = false;
+        private int index = 0;
 
         void Start()
         {
@@ -44,7 +47,7 @@ namespace Nonogram
                 hits = Physics2D.RaycastAll(transform.position, transform.up * -7);
             }
 
-            //Read the amount of rights that the raycast hits
+            //Read the amount of rights & wrongs that the raycast hits
             foreach (RaycastHit2D hit in hits)
             {
                 if (hit.collider.gameObject.tag == "Right")
@@ -64,10 +67,14 @@ namespace Nonogram
                 {
                     if (gameObject.tag == "Top")
                     {
+                        //If the numbers are on top of the game board,
+                        //add a line break between each number
                         numberString = numberString + amount.ToString() + "\n";
                     }
                     else
                     {
+                        //If the numbers are left of the game board,
+                        //add a comma between each number
                         numberString = numberString + amount.ToString() + ",";
                     }
                     amount = 0;
@@ -95,6 +102,7 @@ namespace Nonogram
             }
         }
 
+        //Check if the whole row/column has been played
         private void Update()
         {
             int buttonsDisabled = 0;
@@ -108,14 +116,27 @@ namespace Nonogram
             }
 
             //Reveal the wrong buttons and turn the number text grey
-            //when the whole row has been played
+            //when the whole row/column has been played
             if (buttonsDisabled == rights.Count && rights.Count > 0)
             {
-                numberText.color = disabledColor;
-                foreach (GameObject wrong in wrongs)
+                if (!rowRevealed)
                 {
-                    wrong.GetComponent<Image>().enabled = true;
-                    wrong.GetComponentInParent<Button>().enabled = false;
+                    numberText.color = disabledColor;
+                    foreach (GameObject wrong in wrongs)
+                    {
+                        if (wrong.GetComponent<Image>().enabled == false)
+                        {
+                            wrong.GetComponent<Image>().sprite = sprites[Random.Range(0, sprites.Length - 1)];
+                            wrong.GetComponent<Image>().enabled = true;
+                            wrong.GetComponentInParent<Button>().enabled = false;
+                        }
+                        index++;
+
+                        if (index == wrongs.Count)
+                        {
+                            rowRevealed = true;
+                        }
+                    }
                 }
             }
         }

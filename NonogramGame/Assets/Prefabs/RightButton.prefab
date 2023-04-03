@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 8546931484679262054}
   - component: {fileID: 8546931484679262053}
   - component: {fileID: 8546931484679262052}
-  - component: {fileID: 8546931484679262051}
   m_Layer: 5
   m_Name: RightButton
   m_TagString: Untagged
@@ -136,19 +135,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8546931484679262051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8546931484679262049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68dcbb526ee6d4752ba1811bd6217960, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tappedSquare: {fileID: 0}
 --- !u!1 &8546931484950044679
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +251,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68dcbb526ee6d4752ba1811bd6217960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tappedSquare: {fileID: 0}
+  sprites:
+  - {fileID: 1809465768, guid: eebf031f048c642f18f2c953e4252e92, type: 3}
+  - {fileID: -825712621, guid: eebf031f048c642f18f2c953e4252e92, type: 3}
+  - {fileID: -591376622, guid: eebf031f048c642f18f2c953e4252e92, type: 3}
+  - {fileID: -1449330199, guid: eebf031f048c642f18f2c953e4252e92, type: 3}
+  - {fileID: -230124137, guid: eebf031f048c642f18f2c953e4252e92, type: 3}
+  - {fileID: -825967013, guid: eebf031f048c642f18f2c953e4252e92, type: 3}
+  - {fileID: -773748809, guid: eebf031f048c642f18f2c953e4252e92, type: 3}
 --- !u!1 &8546931485172226293
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,7 +22,6 @@ namespace Nonogram
         private Transform numbersTop;
         [SerializeField] private GameObject numberLeft;
         [SerializeField] private GameObject numberTop;
-        //private List<GameObject> listOfNumbersLeft = new List<GameObject>();
 
         public static int totalNumberOfRights;
 
@@ -32,7 +31,7 @@ namespace Nonogram
             pixels = foodImageBW.GetPixels();
             boardSize = foodImageBW.width;
 
-            //Choose the correct board depending on the size of the image
+            //Choose & activate the correct board depending on the size of the image
             if (boardSize == 5)
             {
                 numbersLeft = gameBoard5x5.transform.GetChild(0);
@@ -68,18 +67,12 @@ namespace Nonogram
                 }
             }
 
-            //Add numbers to the sides of the board
+            //Add the numbers to the sides of the board
             for (int i = 0; i < boardSize; i++)
             {
                 Instantiate(numberLeft, numbersLeft);
                 Instantiate(numberTop, numbersTop);
-                //listOfNumbersLeft.Add(numberObject);
             }
-
-            /*foreach (GameObject numberObject in listOfNumbersLeft)
-            {
-                numberObject.GetComponent<Numbers>().GetNumbers();
-            }*/
 
             //Find the total amount of correct squares in the level
             totalNumberOfRights = GameObject.FindGameObjectsWithTag("Right").Length;
