@@ -8,8 +8,10 @@ namespace Nonogram
 {
     public class LoadLevelSelect : MonoBehaviour
     {
+        public static int selectedLevel;
+        public int level;
+        public Text levelText;
         int levelsUnlocked;
-
         public Button[] buttons;
         
 
@@ -27,6 +29,11 @@ namespace Nonogram
                 buttons[i].interactable = true;
             }
         
+        }
+
+        public void UniversalSceneOpen() {
+            selectedLevel = level;
+            SceneManager.LoadScene("Default Scene");
         }
 
         public void levelUnlock()
