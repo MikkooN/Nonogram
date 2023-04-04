@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 namespace Nonogram
 {
@@ -10,14 +11,14 @@ namespace Nonogram
     {
         public static int selectedLevel;
         public int level;
-        public Text levelText;
+        public TMP_Text levelText;
         int levelsUnlocked;
         public Button[] buttons;
         
 
         void Start()
         {
-            levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
+            /*levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
 
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -27,7 +28,9 @@ namespace Nonogram
             for (int i = 0; i < levelsUnlocked; i++)
             {
                 buttons[i].interactable = true;
-            }
+            }*/
+
+            levelText.text = level.ToString();
         
         }
 
