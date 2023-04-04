@@ -25,7 +25,7 @@ namespace Nonogram
                     numberOfRights++;
                     Debug.Log("Correct squares found: " + numberOfRights);
 
-                    if (numberOfRights >= totalNumberOfRights)
+                    if (numberOfRights == totalNumberOfRights)
                     {
                         gameWon = true;
                         //TODO save the game at this point?
@@ -41,7 +41,7 @@ namespace Nonogram
                     healthUI = GameObject.Find("Health").GetComponent<HealthManager>();
                     healthUI.LoseHealth(health);
 
-                    if (health <= 0)
+                    if (health == 0)
                     {
                         gameLost = true;
                     }

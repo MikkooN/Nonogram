@@ -9,12 +9,8 @@ namespace Nonogram
 {
     public class LoadLevelSelect : MonoBehaviour
     {
-        public static int selectedLevel;
-        public int level;
-        public TMP_Text levelText;
         int levelsUnlocked;
         public Button[] buttons;
-        
 
         void Start()
         {
@@ -29,17 +25,9 @@ namespace Nonogram
             {
                 buttons[i].interactable = true;
             }*/
-
-            levelText.text = level.ToString();
-        
         }
 
-        public void UniversalSceneOpen() {
-            selectedLevel = level;
-            SceneManager.LoadScene("Default Scene");
-        }
-
-        public void levelUnlock()
+        /*public void levelUnlock()
         {
             int currentLevel = SceneManager.GetActiveScene().buildIndex;
 
@@ -49,15 +37,17 @@ namespace Nonogram
             }
 
             Debug.Log("LEVEL" + PlayerPrefs.GetInt("levelsUnlocked") + "UNLOCKED");
-        }
+        }*/
 
-        public void LevelSelect(int levelIndex)
+        //Is this useless?
+        /*public void LevelSelect(int levelIndex)
         {
             SceneManager.LoadScene(levelIndex);
-        }
+        }*/
         
         public static void LoadNextLevel()
         {
+            SquareCheck.ResetLevel();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }
         

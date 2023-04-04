@@ -7,7 +7,8 @@ namespace Nonogram
 {
     public class StartLevel : MonoBehaviour
     {
-        [SerializeField] private Texture2D foodImageBW;
+        int level = LoadUniversalScene.selectedLevel;
+        [SerializeField] private Texture2D[] foodImages;
         private int boardSize;
         private Color[] pixels;
 
@@ -25,11 +26,16 @@ namespace Nonogram
 
         public static int totalNumberOfRights;
 
+        private void Awake()
+        {
+            totalNumberOfRights = 0;
+        }
+
         void Start()
         {
             //Read the colors and the size of the gameboard from the B&W image
-            pixels = foodImageBW.GetPixels();
-            boardSize = foodImageBW.width;
+            pixels = foodImages[level - 1].GetPixels();
+            boardSize = foodImages[level - 1].width;
 
             //Choose & activate the correct board depending on the size of the image
             if (boardSize == 5)

@@ -14,8 +14,9 @@ namespace Nonogram
         public GameObject loseUI;
 
         [SerializeField] private Image winImage;
-        [SerializeField] private Sprite foodImage;
+        [SerializeField] private Sprite[] foodImages;
         [SerializeField] private TMP_Text foodName;
+        int level = LoadUniversalScene.selectedLevel;
 
         void Update()
         {
@@ -27,8 +28,8 @@ namespace Nonogram
                 //If the player won, turn on win UI and
                 //get the correct food image & name
                 winUI.SetActive(true);
-                winImage.sprite = foodImage;
-                foodName.text = foodImage.name;
+                winImage.sprite = foodImages[level - 1];
+                foodName.text = foodImages[level - 1].name;
             }
 
             if (gameLost == true)

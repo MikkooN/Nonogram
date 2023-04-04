@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 4727468163481636291}
   - component: {fileID: 4727468163481636288}
   - component: {fileID: 4727468163481636289}
-  - component: {fileID: 4727468163481636318}
+  - component: {fileID: 6465882098600720838}
   m_Layer: 5
   m_Name: LevelButton
   m_TagString: Untagged
@@ -258,10 +258,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4727468163481636318}
-        m_TargetAssemblyTypeName: Nonogram.LoadLevelSelect, Assembly-CSharp
-        m_MethodName: LevelSelect
-        m_Mode: 3
+      - m_Target: {fileID: 6465882098600720838}
+        m_TargetAssemblyTypeName: Nonogram.LoadUniversalScene, Assembly-CSharp
+        m_MethodName: UniversalSceneOpen
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -270,7 +270,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &4727468163481636318
+--- !u!114 &6465882098600720838
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -279,9 +279,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4727468163481636316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc0c89ee9811d9c4b895316472540d6f, type: 3}
+  m_Script: {fileID: 11500000, guid: 7844c079cb79649158409e9d7e6b3a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   level: 0
   levelText: {fileID: 4727468163440638479}
-  buttons: []
