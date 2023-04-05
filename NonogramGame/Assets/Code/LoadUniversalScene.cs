@@ -15,11 +15,13 @@ namespace Nonogram
 
         void Start()
         {
-            levelText.text = level.ToString();
+            //Turn the level number to text to be displayed on the level button
+            levelText.text = "Level " + level.ToString();
         }
 
         public void UniversalSceneOpen()
         {
+            //Open the universal level scene with the level number
             selectedLevel = level;
             SceneManager.LoadScene("DefaultScene");
         }

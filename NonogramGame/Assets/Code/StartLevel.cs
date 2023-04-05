@@ -26,11 +26,6 @@ namespace Nonogram
 
         public static int totalNumberOfRights;
 
-        private void Awake()
-        {
-            totalNumberOfRights = 0;
-        }
-
         void Start()
         {
             //Read the colors and the size of the gameboard from the B&W image
@@ -83,6 +78,8 @@ namespace Nonogram
             //Find the total amount of correct squares in the level
             totalNumberOfRights = GameObject.FindGameObjectsWithTag("Right").Length;
             Debug.Log("Total number of rights: " + totalNumberOfRights);
+
+            SquareCheck.GetNumberOfRights();
         }
     }
 }

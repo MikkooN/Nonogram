@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 namespace Nonogram
 {
@@ -109,7 +110,7 @@ namespace Nonogram
 
             foreach (GameObject right in rights)
             {
-                if (right.GetComponentInParent<Button>().enabled == false)
+                if (right.GetComponentInParent<EventTrigger>().enabled == false)
                 {
                     buttonsDisabled++;
                 }
@@ -128,7 +129,7 @@ namespace Nonogram
                         {
                             wrong.GetComponent<Image>().sprite = sprites[Random.Range(0, sprites.Length - 1)];
                             wrong.GetComponent<Image>().enabled = true;
-                            wrong.GetComponentInParent<Button>().enabled = false;
+                            wrong.GetComponentInParent<EventTrigger>().enabled = false;
                         }
                         index++;
 

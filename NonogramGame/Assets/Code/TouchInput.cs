@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 namespace Nonogram
 {
@@ -10,7 +11,7 @@ namespace Nonogram
         private GameObject tappedSquare;
         private Image image;
         [SerializeField] private Sprite[] sprites;
-        private Button button;
+        private EventTrigger trigger;
 
 
         public void ButtonTapped()
@@ -19,14 +20,20 @@ namespace Nonogram
             tappedSquare = gameObject;
             image = tappedSquare.GetComponent<Image>();
             image.sprite = sprites[Random.Range(0, sprites.Length - 1)];
+
+            if (tappedSquare.gameObject.tag == "Wrong")
+            {
+                image.color = Color.red;
+            }
+
             image.enabled = true;
 
             //Check if the tapped square was correct
             SquareCheck.CheckTag(tappedSquare);
 
             //Disable the button after one touch
-            button = tappedSquare.GetComponentInParent<Button>();
-            button.enabled = false;
+            trigger = tappedSquare.GetComponentInParent<EventTrigger>();
+            trigger.enabled = false;
         }
     }
 }

@@ -23,23 +23,11 @@ namespace Nonogram
                 }
                 else
                 {
-                    //If the player lost health, play animation & particle effect
+                    //If the player lost health, play burn animation
                     animator = hearts[i].GetComponentInChildren<Animator>();
                     animator.SetTrigger("Burn");
-
-                    //Remove the heart from the array
-                    RemoveElement(ref hearts, i);
                 }
             }
-        }
-
-        private void RemoveElement(ref GameObject[] hearts, int index)
-        {
-            for (int i = index; i < hearts.Length - 1; i++)
-            {
-                hearts[i] = hearts[i + 1];
-            }
-            Array.Resize(ref hearts, hearts.Length - 1);
         }
     }
 }

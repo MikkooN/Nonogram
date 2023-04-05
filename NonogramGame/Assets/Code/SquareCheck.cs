@@ -7,12 +7,18 @@ namespace Nonogram
 {
     public class SquareCheck : MonoBehaviour
     {
-        private static int totalNumberOfRights = StartLevel.totalNumberOfRights;
+        private static int totalNumberOfRights;
         private static int numberOfRights = 0;
         public static int health = 3;
         private static HealthManager healthUI;
         public static bool gameWon = false;
         public static bool gameLost = false;
+
+        public static void GetNumberOfRights()
+        {
+            //Get the number of rights in the level from the StartLevel script
+            totalNumberOfRights = StartLevel.totalNumberOfRights;
+        }
 
         public static void CheckTag(GameObject tappedSquare)
         {
