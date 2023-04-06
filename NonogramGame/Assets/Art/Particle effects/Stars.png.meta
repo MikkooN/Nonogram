@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3f08dee765abbc34a8b6f491f9ceca53
+guid: 60c720709552342998f497f33cb9db1e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 256
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93d9a5def163ae94c99ec2005719e2b2
-      internalID: 802356131
+      spriteID: e6c85adacae0e4c3894f26e4747ef559
+      internalID: 772928037
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0601bdf3e60726b49a3eca28f8e0efcb
-      internalID: -461335780
+      spriteID: 390714ada7d37443fb5e1f69b07b648e
+      internalID: 1270105109
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c52be855bb733134ab53c7d808b0dc1b
-      internalID: 1452325597
+      spriteID: 53321e532b1e04b37820a780e4c13309
+      internalID: -739247762
       vertices: []
       indices: 
       edges: []
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4339a8eb986e502448611f8b0d60271c
-      internalID: -345174599
+      spriteID: df3e8eb45aee940e8887b0b94e244eaf
+      internalID: -1513637232
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Stars_2: 1452325597
-      Stars_0: 802356131
-      Stars_3: -345174599
-      Stars_1: -461335780
+      Stars_2: -739247762
+      Stars_0: 772928037
+      Stars_3: -1513637232
+      Stars_1: 1270105109
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
