@@ -231,4 +231,4 @@ MonoBehaviour:
   - {fileID: -420001006, guid: 76e15e0f9c05e4e7281deabcda8781a9, type: 3}
   - {fileID: -35439333, guid: 76e15e0f9c05e4e7281deabcda8781a9, type: 3}
   - {fileID: 310160987, guid: 76e15e0f9c05e4e7281deabcda8781a9, type: 3}
-  disabledColor: {r: 0, g: 0, b: 0, a: 0.39215687}
+  disabledColor: {r: 0, g: 0, b: 0, a: 0.19607843}
