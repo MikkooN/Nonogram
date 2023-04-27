@@ -31,6 +31,7 @@ namespace Nonogram
                 winImage.sprite = foodImages[level - 1];
                 foodName.text = foodImages[level - 1].name;
 
+                //Unlock the next level
                 PlayerPrefs.SetInt("levelsUnlocked", level + 1);
             }
 

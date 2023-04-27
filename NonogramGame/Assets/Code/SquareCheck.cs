@@ -34,8 +34,6 @@ namespace Nonogram
                     if (numberOfRights == totalNumberOfRights)
                     {
                         gameWon = true;
-                        //TODO save the game at this point?
-
                     }
                 }
                 else if (tappedSquare.tag == "Wrong")
