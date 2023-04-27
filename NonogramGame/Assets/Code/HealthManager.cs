@@ -16,12 +16,7 @@ namespace Nonogram
         {
             for (int i = 0; i < hearts.Length; i++)
             {
-                if (i < health)
-                {
-                    //Keep the healthIcon for the hearts that haven't been lost
-                    hearts[i].GetComponent<Image>().sprite = healthIcon;
-                }
-                else
+                if (i > health - 1)
                 {
                     //If the player lost health, play burn animation
                     animator = hearts[i].GetComponentInChildren<Animator>();

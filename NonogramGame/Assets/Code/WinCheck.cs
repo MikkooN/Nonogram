@@ -30,6 +30,8 @@ namespace Nonogram
                 winUI.SetActive(true);
                 winImage.sprite = foodImages[level - 1];
                 foodName.text = foodImages[level - 1].name;
+
+                PlayerPrefs.SetInt("levelsUnlocked", level + 1);
             }
 
             if (gameLost == true)

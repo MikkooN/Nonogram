@@ -10,11 +10,11 @@ namespace Nonogram
     public class LoadLevelSelect : MonoBehaviour
     {
         int levelsUnlocked;
-        public Button[] buttons;
+        [SerializeField] private Button[] buttons;
 
         void Start()
         {
-            /*levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
+            levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
 
             for (int i = 0; i < buttons.Length; i++)
             {
@@ -24,7 +24,7 @@ namespace Nonogram
             for (int i = 0; i < levelsUnlocked; i++)
             {
                 buttons[i].interactable = true;
-            }*/
+            }
         }
 
         /*public void levelUnlock()
@@ -47,8 +47,9 @@ namespace Nonogram
         
         public static void LoadNextLevel()
         {
+            /*int level = LoadUniversalScene.selectedLevel + 1;
             SquareCheck.ResetLevel();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+            LoadUniversalScene.UniversalSceneOpen(level);*/
         }
         
         public static void LoadMainMenu()
