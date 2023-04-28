@@ -7,7 +7,7 @@ namespace Nonogram
 {
     public class StartLevel : MonoBehaviour
     {
-        int level = LoadUniversalScene.selectedLevel;
+        public static int level;
         [SerializeField] private Texture2D[] foodImages;
         private int boardSize;
         private Color[] pixels;

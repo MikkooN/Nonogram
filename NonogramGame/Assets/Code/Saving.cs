@@ -26,7 +26,6 @@ namespace Nonogram
                 buttons[i].interactable = false;
                 empty = buttons[i].transform.GetChild(2).gameObject;
                 empty.SetActive(true);
-
             }
 
             for (int i = 0; i < levelsUnlocked; i++)
@@ -47,18 +46,6 @@ namespace Nonogram
                 }
             }
         }
-
-        /*public void levelUnlock()
-        {
-            int currentLevel = SceneManager.GetActiveScene().buildIndex;
-
-            if(currentLevel >= PlayerPrefs.GetInt("levelsUnlocked"))
-            {
-                PlayerPrefs.SetInt("levelsUnlocked", currentLevel +1);
-            }
-
-            Debug.Log("LEVEL" + PlayerPrefs.GetInt("levelsUnlocked") + "UNLOCKED");
-        }*/
 
         public void DeleteSaveData()
         {

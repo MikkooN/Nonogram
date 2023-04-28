@@ -9,7 +9,6 @@ namespace Nonogram
 {
     public class LoadUniversalScene : MonoBehaviour
     {
-        public static int selectedLevel;
         [SerializeField] private int level;
         [SerializeField] private TMP_Text levelText;
 
@@ -22,8 +21,9 @@ namespace Nonogram
         public void UniversalSceneOpen()
         {
             //Open the universal level scene with the level number
-            selectedLevel = level;
             SceneManager.LoadScene("DefaultScene");
+            StartLevel.level = level;
+            WinCheck.level = level;
         }
     }
 }

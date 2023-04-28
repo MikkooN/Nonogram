@@ -16,7 +16,7 @@ namespace Nonogram
         [SerializeField] private Image winImage;
         [SerializeField] private Sprite[] foodImages;
         [SerializeField] private TMP_Text foodName;
-        int level = LoadUniversalScene.selectedLevel;
+        public static int level;
 
         void Update()
         {
@@ -31,8 +31,11 @@ namespace Nonogram
                 winImage.sprite = foodImages[level - 1];
                 foodName.text = foodImages[level - 1].name;
 
-                //Unlock the next level
-                PlayerPrefs.SetInt("levelsUnlocked", level + 1);
+                if (PlayerPrefs.GetInt("levelsUnlocked") < level + 1)
+                {
+                    //Unlock the next level
+                    PlayerPrefs.SetInt("levelsUnlocked", level + 1);
+                } 
             }
 
             if (gameLost == true)

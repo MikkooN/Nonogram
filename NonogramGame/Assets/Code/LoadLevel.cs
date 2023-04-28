@@ -9,15 +9,26 @@ namespace Nonogram
 {
     public class LoadLevel : MonoBehaviour
     {
-        /*public static void LoadNextLevel()
+        private bool gameWon;
+
+
+        public void LoadNextLevel()
         {
-            int level = LoadUniversalScene.selectedLevel + 1;
+            StartLevel.level++;
+            WinCheck.level++;
             SquareCheck.ResetLevel();
-            LoadUniversalScene.UniversalSceneOpen(level);
-        }*/
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
         
-        public static void LoadMainMenu()
+        public void LoadMainMenu()
         {
+            gameWon = SquareCheck.gameWon;
+            if (gameWon == true)
+            {
+                StartLevel.level++;
+                WinCheck.level++;
+            }
+
             SquareCheck.ResetLevel(); 
             SceneManager.LoadScene("MainMenu");
         }
