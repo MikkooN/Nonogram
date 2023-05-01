@@ -11,6 +11,7 @@ namespace Nonogram
         public GameObject[] hearts;
         public Sprite healthIcon;
         private Animator animator;
+        public AudioSource burnAudio;
 
         public void LoseHealth(int health)
         {
@@ -21,6 +22,8 @@ namespace Nonogram
                     //If the player lost health, play burn animation
                     animator = hearts[i].GetComponentInChildren<Animator>();
                     animator.SetTrigger("Burn");
+                    //burnAudio = Canvas.GetComponent<AudioManager>().playButtons();
+                    //burnAudio.Play();
                 }
             }
         }
