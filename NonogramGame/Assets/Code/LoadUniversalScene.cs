@@ -1,7 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 using TMPro;
 
@@ -11,11 +14,33 @@ namespace Nonogram
     {
         [SerializeField] private int level;
         [SerializeField] private TMP_Text levelText;
+        [SerializeField] private LocalizedString localizedLevel;
 
         void Start()
         {
             //Turn the level number to text to be displayed on the level button
-            levelText.text = "Level " + level.ToString();
+            levelText.text = String.Format(localizedLevel.GetLocalizedString(), level);
+        }
+
+        private void OnEnable()
+        {
+            LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+        }
+
+        private void OnDisable()
+        {
+            LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+        }
+
+        private void OnLocaleChanged(Locale obj)
+        {
+            SetLevelText();
+        }
+
+        private void SetLevelText()
+        {
+            //Turn the level number to text to be displayed on the level button
+            levelText.text = String.Format(localizedLevel.GetLocalizedString(), level);
         }
 
         public void UniversalSceneOpen()

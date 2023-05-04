@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Texts_fi
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fi
+  m_SharedData: {fileID: 11400000, guid: 2f108be496d8f405188929826fb6c80e, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1713971912704
+    m_Localized: Pelaa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1832674910208
+    m_Localized: Tutoriaali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1885938376704
+    m_Localized: Asetukset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1933472423936
+    m_Localized: Sulje
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1978330505216
+    m_Localized: Tasot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2384574013440
+    m_Localized: Taso {0}
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2447576653824
+    m_Localized: Vaikeus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2626111397888
+    m_Localized: Poistu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2685804732416
+    m_Localized: Valikko
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3059315892224
+    m_Localized: "Yrit\xE4 uudelleen!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3146117013504
+    m_Localized: "L\xE4p\xE4isit tason!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3348097916928
+    m_Localized: Poista edistyminen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3885694443520
+    m_Localized: "1. Nonogram-peliss\xE4 tarkoituksena on t\xE4ytt\xE4\xE4 pelilauta
+      laudan sivuissa olevien numeroiden perusteella."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4108772696064
+    m_Localized: "2. Numerot kertovat kuinka monta vierekk\xE4ist\xE4 neli\xF6t\xE4
+      tulee t\xE4ytt\xE4\xE4."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4283352211456
+    m_Localized: "3. Jos numeroita on monta, neli\xF6iden v\xE4liss\xE4 on oltava
+      v\xE4hint\xE4\xE4n yksi tyhj\xE4 neli\xF6."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4475447140352
+    m_Localized: "4. Varo polttamasta patakintaitasi. Sinulla on niit\xE4 vain kolme. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8893760528384
+    m_Localized: Kielet
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

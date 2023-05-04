@@ -24,7 +24,7 @@ namespace Nonogram
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].interactable = false;
-                empty = buttons[i].transform.GetChild(2).gameObject;
+                empty = buttons[i].transform.GetChild(3).gameObject;
                 empty.SetActive(true);
             }
 
@@ -34,14 +34,14 @@ namespace Nonogram
 
                 if (i < levelsUnlocked - 1)
                 {
-                    empty = buttons[i].transform.GetChild(2).gameObject;
+                    empty = buttons[i].transform.GetChild(3).gameObject;
                     empty.SetActive(false);
 
-                    image = buttons[i].transform.GetChild(3).gameObject;
+                    image = buttons[i].transform.GetChild(4).gameObject;
                     image.SetActive(true);
-                    foodImage = buttons[i].transform.GetChild(3).GetComponent<Image>();
+                    foodImage = buttons[i].transform.GetChild(4).GetComponent<Image>();
                     foodImage.sprite = foodImages[i];
-                    foodName = buttons[i].transform.GetChild(1).GetComponent<TMP_Text>();
+                    foodName = buttons[i].transform.GetChild(2).GetComponent<TMP_Text>();
                     foodName.text = foodImages[i].name;
                 }
             }

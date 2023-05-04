@@ -14,6 +14,7 @@ namespace Nonogram
 
         public void LoadNextLevel()
         {
+            //Add 1 to the level count, reset variables and reload the level scene.
             StartLevel.level++;
             WinCheck.level++;
             SquareCheck.ResetLevel();
@@ -22,6 +23,8 @@ namespace Nonogram
         
         public void LoadMainMenu()
         {
+            //If the player has won the level, then add 1 to the level count
+            //before resetting the level and exiting to menu.
             gameWon = SquareCheck.gameWon;
             if (gameWon == true)
             {
@@ -41,9 +44,9 @@ namespace Nonogram
         
         public void ReplayLevel ()
         {
+            //Reset the variables manually and reload the level
             SquareCheck.ResetLevel();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        
     }
 }
