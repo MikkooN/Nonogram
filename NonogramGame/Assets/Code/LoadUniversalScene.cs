@@ -22,6 +22,7 @@ namespace Nonogram
             levelText.text = String.Format(localizedLevel.GetLocalizedString(), level);
         }
 
+        //Changing locale
         private void OnEnable()
         {
             LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;

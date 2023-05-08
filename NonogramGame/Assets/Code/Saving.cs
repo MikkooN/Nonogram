@@ -21,6 +21,7 @@ namespace Nonogram
         {
             levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
 
+            //Disable all level buttons
             for (int i = 0; i < buttons.Length; i++)
             {
                 buttons[i].interactable = false;
@@ -28,6 +29,8 @@ namespace Nonogram
                 empty.SetActive(true);
             }
 
+            //Enable level buttons for all the unlocked levels
+            //and reveal the pictures for all the cleared levels
             for (int i = 0; i < levelsUnlocked; i++)
             {
                 buttons[i].interactable = true;
@@ -49,6 +52,8 @@ namespace Nonogram
 
         public void DeleteSaveData()
         {
+            //Delete levelsunlocked from playerprefs and start
+            //the game from the beginning.
             PlayerPrefs.DeleteKey("levelsUnlocked");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
