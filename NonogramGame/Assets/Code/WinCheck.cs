@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 using TMPro;
 
@@ -16,6 +18,7 @@ namespace Nonogram
         [SerializeField] private Image winImage;
         [SerializeField] private Sprite[] foodImages;
         [SerializeField] private TMP_Text foodName;
+        private LocalizedString foodNameText = new LocalizedString();
         public static int level;
 
         void Update()
@@ -30,12 +33,13 @@ namespace Nonogram
                 winUI.SetActive(true);
                 winImage.sprite = foodImages[level - 1];
                 foodName.text = foodImages[level - 1].name;
+                foodName.text = foodNameText.GetLocalizedString("Texts", level.ToString());
 
                 if (PlayerPrefs.GetInt("levelsUnlocked") < level + 1)
                 {
                     //Unlock the next level
                     PlayerPrefs.SetInt("levelsUnlocked", level + 1);
-                } 
+                }
             }
 
             if (gameLost == true)

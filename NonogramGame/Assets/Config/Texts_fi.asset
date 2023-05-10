@@ -89,6 +89,86 @@ MonoBehaviour:
     m_Localized: Kielet
     m_Metadata:
       m_Items: []
+  - m_Id: 2171658885390336
+    m_Localized: Appelsiini
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2171798371164160
+    m_Localized: Kuppikakku
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2171965581287424
+    m_Localized: Donitsi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172011253063680
+    m_Localized: Banaani
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172070426304512
+    m_Localized: Kananmuna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172289209589760
+    m_Localized: Kakku
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172349519486976
+    m_Localized: Omena
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172381257785344
+    m_Localized: Voisarvi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172592004784128
+    m_Localized: Brezel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172822175604736
+    m_Localized: Vesimeloni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172949200101376
+    m_Localized: Ananas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173010860564480
+    m_Localized: Parsakaali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173064207917056
+    m_Localized: Juusto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173121346920448
+    m_Localized: Sushi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173167417155584
+    m_Localized: Ranskalaiset
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173225311133696
+    m_Localized: "Pirtel\xF6"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173281284120576
+    m_Localized: Nuudelit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173322610597888
+    m_Localized: Pizza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173471776825344
+    m_Localized: Pihvi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173518224547840
+    m_Localized: Sipulirenkaat
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

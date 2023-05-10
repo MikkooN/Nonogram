@@ -89,6 +89,86 @@ MonoBehaviour:
     m_Localized: Languages
     m_Metadata:
       m_Items: []
+  - m_Id: 2171658885390336
+    m_Localized: Orange
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2171798371164160
+    m_Localized: Cupcake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2171965581287424
+    m_Localized: Donut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172011253063680
+    m_Localized: Banana
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172070426304512
+    m_Localized: Egg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172289209589760
+    m_Localized: Cake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172349519486976
+    m_Localized: Apple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172381257785344
+    m_Localized: Croissant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172592004784128
+    m_Localized: Brezel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172822175604736
+    m_Localized: Watermelon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2172949200101376
+    m_Localized: Pineapple
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173010860564480
+    m_Localized: Broccoli
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173064207917056
+    m_Localized: Cheese
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173121346920448
+    m_Localized: Sushi
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173167417155584
+    m_Localized: Fries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173225311133696
+    m_Localized: Milkshake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173281284120576
+    m_Localized: Noodles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173322610597888
+    m_Localized: Pizza
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173471776825344
+    m_Localized: Steak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2173518224547840
+    m_Localized: Onion rings
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
