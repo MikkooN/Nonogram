@@ -45,13 +45,6 @@ namespace Nonogram
             if (gameLost == true)
             {
                 loseUI.SetActive(true);
-
-                //Emma messing with stuff: 
-                AudioSource audio = loseUI.GetComponent<AudioSource>();
-                if (audio != null )
-                {
-                    audio.Play();
-                }
             }
         }
     }
