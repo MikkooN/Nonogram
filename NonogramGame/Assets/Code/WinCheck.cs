@@ -32,8 +32,9 @@ namespace Nonogram
                 //get the correct food image & name
                 winUI.SetActive(true);
                 winImage.sprite = foodImages[level - 1];
-                foodName.text = foodImages[level - 1].name;
+                //foodName.text = foodImages[level - 1].name;
                 //foodName.text = foodNameText.GetLocalizedString("Texts", level.ToString());
+                foodName.text = LocalizationSettings.StringDatabase.GetLocalizedString(level.ToString());
 
                 if (PlayerPrefs.GetInt("levelsUnlocked") < level + 1)
                 {
