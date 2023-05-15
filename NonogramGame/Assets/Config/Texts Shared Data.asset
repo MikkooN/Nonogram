@@ -163,6 +163,22 @@ MonoBehaviour:
     m_Key: 20
     m_Metadata:
       m_Items: []
+  - m_Id: 4011793545420800
+    m_Key: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4011853062594560
+    m_Key: Master
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4011888751927296
+    m_Key: Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4011942325772288
+    m_Key: SFX
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

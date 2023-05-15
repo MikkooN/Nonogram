@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 using TMPro;
 
@@ -30,11 +32,11 @@ namespace Nonogram
             }
 
             //Enable level buttons for all the unlocked levels
-            //and reveal the pictures for all the cleared levels
             for (int i = 0; i < levelsUnlocked; i++)
             {
                 buttons[i].interactable = true;
 
+                //Reveal the pictures and food names for all the cleared levels
                 if (i < levelsUnlocked - 1)
                 {
                     empty = buttons[i].transform.GetChild(3).gameObject;
@@ -44,8 +46,9 @@ namespace Nonogram
                     image.SetActive(true);
                     foodImage = buttons[i].transform.GetChild(4).GetComponent<Image>();
                     foodImage.sprite = foodImages[i];
+
                     foodName = buttons[i].transform.GetChild(2).GetComponent<TMP_Text>();
-                    foodName.text = foodImages[i].name;
+                    foodName.text = LocalizationSettings.StringDatabase.GetLocalizedString((i + 1).ToString());
                 }
             }
         }

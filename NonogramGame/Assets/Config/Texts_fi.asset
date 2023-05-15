@@ -122,7 +122,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2172592004784128
-    m_Localized: Brezel
+    m_Localized: Pretzel
     m_Metadata:
       m_Items: []
   - m_Id: 2172822175604736
@@ -167,6 +167,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2173518224547840
     m_Localized: Sipulirenkaat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4011793545420800
+    m_Localized: "\xC4\xE4net"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4011853062594560
+    m_Localized: Yleinen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4011888751927296
+    m_Localized: Musiikki
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4011942325772288
+    m_Localized: Efektit
     m_Metadata:
       m_Items: []
   references:
