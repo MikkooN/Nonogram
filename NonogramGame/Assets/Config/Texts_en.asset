@@ -67,7 +67,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3885694443520
-    m_Localized: 1. In a nonogram the goal is to fill the board according to the
+    m_Localized: 1. In a nonogram, the goal is to fill the board according to the
       numbers on sides of the board.
     m_Metadata:
       m_Items: []
@@ -77,7 +77,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4283352211456
-    m_Localized: 3. If there are many numbers there must be at least one empty square
+    m_Localized: 3. If there are many numbers, there must be at least one empty square
       between them.
     m_Metadata:
       m_Items: []

@@ -300,7 +300,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 600, y: 1050}
+  m_SizeDelta: {x: 600, y: 1150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26561731
 MonoBehaviour:
@@ -8805,7 +8805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -45}
   m_SizeDelta: {x: 600, y: 500}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &716208253
@@ -8861,13 +8861,13 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -10783,7 +10783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -45}
   m_SizeDelta: {x: 600, y: 500}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &813364259
@@ -10840,13 +10840,13 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -14444,13 +14444,13 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -23969,23 +23969,23 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 20edeac803e674f189067d6e1c7d5aae, type: 3}
   - {fileID: 21300000, guid: cd6fa2d3aaf1e4bcc9b8e5fd49758ed6, type: 3}
   - {fileID: 21300000, guid: 09edde04f9b354d42a73667100b400f7, type: 3}
-  - {fileID: 21300000, guid: 8a168eb7e211849fd9b85d2a67cf862a, type: 3}
   - {fileID: 21300000, guid: 0dc9faec21a604c08b1f11fc85e528f3, type: 3}
+  - {fileID: 21300000, guid: 8a168eb7e211849fd9b85d2a67cf862a, type: 3}
   - {fileID: 21300000, guid: 2f1f2b3c34b3c4d9199c155fa89aceb6, type: 3}
   - {fileID: 21300000, guid: 2c48586515b1e463c80621248234c10d, type: 3}
   - {fileID: 21300000, guid: 47afae0c97b3c4387b4ea962d6e8e82f, type: 3}
   - {fileID: 21300000, guid: 936b1ed32c69c45daa10fe0a2f1b24dc, type: 3}
   - {fileID: 21300000, guid: 43054ad71c2e14aca8f2576d1a3d7bf5, type: 3}
-  - {fileID: 21300000, guid: 5b88e2cbc2ac8b84396e435163503341, type: 3}
   - {fileID: 21300000, guid: 3ca3566d3125cf8409312afaf3c656d8, type: 3}
   - {fileID: 21300000, guid: 851b31315e1559a45a6ab29ab9564032, type: 3}
-  - {fileID: 21300000, guid: d57f91363d5aaba4f8a6fd58331c1247, type: 3}
+  - {fileID: 21300000, guid: 5b88e2cbc2ac8b84396e435163503341, type: 3}
   - {fileID: 21300000, guid: e79a8db015b8002448897c2f04658098, type: 3}
   - {fileID: 21300000, guid: e8fd5163120f42941842dda583c5f8c8, type: 3}
-  - {fileID: 21300000, guid: be097ea3a3371bc4a86fd25020efccde, type: 3}
+  - {fileID: 21300000, guid: d57f91363d5aaba4f8a6fd58331c1247, type: 3}
   - {fileID: 21300000, guid: 78a2eb56f588d9b48a03f261468e593f, type: 3}
   - {fileID: 21300000, guid: 10fa6da11fbf8b04ebe69b2e0857921c, type: 3}
   - {fileID: 21300000, guid: ddf2f1f87a14f7547aa840d37a0841c0, type: 3}
+  - {fileID: 21300000, guid: be097ea3a3371bc4a86fd25020efccde, type: 3}
 --- !u!114 &1865059283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25301,13 +25301,13 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

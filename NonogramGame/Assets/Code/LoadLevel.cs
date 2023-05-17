@@ -13,11 +13,18 @@ namespace Nonogram
 
         public void LoadNextLevel()
         {
-            //Add 1 to the level count, reset static variables and reload the level scene.
-            StartLevel.level++;
-            WinCheck.level++;
-            SquareCheck.ResetLevel();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if (StartLevel.level >= 20)
+            {
+                LoadMainMenu();
+            }
+            else
+            {
+                //Add 1 to the level count, reset static variables and reload the level scene.
+                StartLevel.level++;
+                WinCheck.level++;
+                SquareCheck.ResetLevel();
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
         
         public void LoadMainMenu()
