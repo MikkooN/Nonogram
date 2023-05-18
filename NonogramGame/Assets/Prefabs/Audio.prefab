@@ -894,7 +894,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6260520025907149576, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
       propertyPath: m_FillAmount
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6260520025907149579, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1005,8 +1005,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6260520026545182157, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
-      propertyPath: m_MinValue
+      propertyPath: m_Value
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260520026545182157, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260520026545182157, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
+      propertyPath: m_MinValue
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 6260520026545182159, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
       propertyPath: m_Name
@@ -1028,7 +1036,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6260520025907149576, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
       propertyPath: m_FillAmount
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6260520025907149579, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1134,6 +1142,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6260520026545182157, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6260520026545182159, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
       propertyPath: m_Name
       value: Slider
@@ -1154,7 +1166,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6260520025907149576, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
       propertyPath: m_FillAmount
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6260520025907149579, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1270,7 +1282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6260520026545182157, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
       propertyPath: m_MaxValue
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6260520026545182159, guid: 98cf22003c976c14d8dc54bc4f7cf597, type: 3}
       propertyPath: m_Name

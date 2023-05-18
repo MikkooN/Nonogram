@@ -1,3 +1,4 @@
+using Newtonsoft.Json.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,21 +24,28 @@ namespace Nonogram
             masterSlider.onValueChanged.AddListener(SetMasterVolume);
             musicSlider.onValueChanged.AddListener(SetMusicVolume);
             sfxSlider.onValueChanged.AddListener(SetSFXVolume);
+
+            masterSlider.value = PlayerPrefs.GetFloat("masterVolume", 0);
+            musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 0);
+            sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 0);
         }
 
         void SetMasterVolume(float value)
         {
-            mixer.SetFloat(MIXER_MASTER, Mathf.Log10(value) * 20);
+            mixer.SetFloat(MIXER_MASTER, value);
+            PlayerPrefs.SetFloat("masterVolume", value);
         }
 
         void SetMusicVolume(float value)
         {
-            mixer.SetFloat(MIXER_MUSIC, Mathf.Log10(value) * 20);
+            mixer.SetFloat(MIXER_MUSIC, value);
+            PlayerPrefs.SetFloat("musicVolume", value);
         }
 
         void SetSFXVolume(float value)
         {
-            mixer.SetFloat(MIXER_SFX, Mathf.Log10(value) * 20);
+            mixer.SetFloat(MIXER_SFX, value);
+            PlayerPrefs.SetFloat("sfxVolume", value);
         }
     }
 }

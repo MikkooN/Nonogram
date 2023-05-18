@@ -10472,7 +10472,6 @@ GameObject:
   - component: {fileID: 803261234}
   - component: {fileID: 803261235}
   - component: {fileID: 803261236}
-  - component: {fileID: 803261237}
   m_Layer: 0
   m_Name: Settings
   m_TagString: Untagged
@@ -10541,22 +10540,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &803261237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803261233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c4c8abe6ffd724fb16a299559d5d3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mixer: {fileID: 24100000, guid: c673b5f51a093654980f9d39ddabf94c, type: 2}
-  masterSlider: {fileID: 753911203}
-  musicSlider: {fileID: 1784600617}
-  sfxSlider: {fileID: 816514323}
 --- !u!1001 &804351748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20984,7 +20967,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 1463899476152200, guid: c673b5f51a093654980f9d39ddabf94c, type: 2}
   m_audioClip: {fileID: 8300000, guid: 256ba15b67f524d30b35ae29375f5aa1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -23825,6 +23808,7 @@ GameObject:
   - component: {fileID: 1865059282}
   - component: {fileID: 1865059281}
   - component: {fileID: 1865059284}
+  - component: {fileID: 1865059285}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -24094,6 +24078,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1865059285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865059276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c4c8abe6ffd724fb16a299559d5d3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: c673b5f51a093654980f9d39ddabf94c, type: 2}
+  masterSlider: {fileID: 753911203}
+  musicSlider: {fileID: 1784600617}
+  sfxSlider: {fileID: 816514323}
 --- !u!1 &1894925196
 GameObject:
   m_ObjectHideFlags: 0
